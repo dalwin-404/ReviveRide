@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Map Initialization
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZGFsd2luLTIiLCJhIjoiY2xyand3ZGVxMDZtODJ0cXJ6bTVqbXd6YyJ9.i5yryBgzS9JwD1CJBkoznQ';
+    mapboxgl.accessToken = ''; // Add your Mapbox access token here;
 
     const map = new mapboxgl.Map({
         container: 'map',
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const messageInput = document.querySelector(".message-input");
     const sendMessageButton = document.querySelector("#send-message");
 
-    const API_KEY = "AIzaSyCYOQSVOVs1bbLWY03Mx4Emxkq3U5Bekvo";
+    const API_KEY = ""; // Add your API key here
     const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
     const userData = { message: null };
 
