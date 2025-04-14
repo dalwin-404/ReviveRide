@@ -6,6 +6,9 @@
     <title>ReviveRide -Dashboard</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+    <!-- Favicon  -->
+    <link rel="icon" href="img/logo_img.png">
+
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,10 +40,8 @@
         </div>
         <!-- Spinner End -->
 
-
         <!-- Sidebar Start -->
-        <!-- Sidebar Start -->
-        <div class="sidebar pe-4 pb-3">
+        <div class="sidebar pe-4 pb-3" style="height: 100vh; overflow-y: auto;">
             <nav class="navbar bg-light navbar-light">
 
                 <div class="d-flex align-items-center ms-4 mb-4">
@@ -54,241 +55,244 @@
                 <div class="navbar-nav w-100">
                     <a href="index.html" class="nav-item nav-link"><i
                             class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                class="fa fa-calendar-alt me-2"></i>Authentication</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="signin.html" class="dropdown-item">Login</a>
-                            <a href="signup.html" class="dropdown-item">Register</a>
-                            <a href="createID.html" class="dropdown-item">Create an ID</a>
-                            <a href="forgotPassword.html" class="dropdown-item">Forgot Password</a>
-                        </div>
+                    <div class="nav-item ">
+                        <a href="signin.html" class="nav-link"><i class="fas fa-sign-in-alt me-2"></i>Login</a>
+                        <a href="signup.html" class="nav-link"><i class="fas fa-user-edit me-2"></i>Register</a>
+                        <a href="createID.html" class="nav-link"><i class="fas fa-id-card me-2"></i>Create an ID</a>
+                        <a href="forgotPassword.html" class="nav-link"><i class="fas fa-unlock-alt me-2"></i>Forgot
+                            Password</a>
                     </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                class="fa fa-cogs me-2"></i>Service
+                    <div class="nav-item">
+                        <a href="ourServices.html" class="nav-link"><i class="fa fa-cogs me-2"></i>Service
                             Option</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="feedback.html" class="dropdown-item">Customer Feedback</a>
-                            <a href="chatbox.html" class="dropdown-item">Customer Chatbox</a>
-                        </div>
                     </div>
-                    <a href="locationFinder.html" class="nav-item nav-link"><i
-                            class="fa fa-map-marker-alt me-2"></i>Location
-                        Finder</a>
-                    <a href="service.html" class="nav-item nav-link"><i class="fa fa-receipt me-2"></i>Transaction
-                        History</a>
-                    <div class="nav-item dropdown">
+                    <div class="nav-item">
+                        <a href="feedback.html" class="nav-link"><i class="fas fa-comment-dots me-2"></i>Customer</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="chatbox.html" class="nav-link"><i class="fas fa-headset me-2"></i>Customer Chatbox</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="locationFinder.html" class="nav-link"><i class="fa fa-map-marker-alt me-2"></i>Location
+                            Finder</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="service.html" class="nav-link"><i class="fa fa-receipt me-2"></i>Transaction
+                            History</a>
+                    </div>
+                    <div class="nav-item">
                         <a href="notification.html" class="nav-link"><i class="fa fa-bell me-2"></i>Notification</a>
 
                     </div>
                     <div class="nav-item">
                         <a href="payment.html" class="nav-link"><i class="fa fa-credit-card me-2"></i>Payment</a>
-                    </div>
-                </div>
-        </div>
-        </nav>
-        <!-- Sidebar End -->
-
-
-        <!-- Content Start -->
-        <div class="content">
-            <!-- Navbar Start -->
-            <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
-                <!-- Sidebar toggler (hamburger icon) for smaller screens -->
-                <a href="#" class="sidebar-toggler flex-shrink-0 me-3">
-                    <i class="fa fa-bars"></i>
-                </a>
-
-                <!-- BRAND / LOGO (Visible on large screens) -->
-                <a href="index.html" class="navbar-brand d-none d-lg-flex align-items-center me-4">
-
-                </a>
-
-                <!-- BRAND / LOGO (Visible on small screens) -->
-                <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
-
-                </a>
-
-                <div class="d-none d-lg-block ms-3">
-                    <span style="color: white; font-size: 13px;">Welcome to ReviveRide</span>
-                </div>
-
-                <!-- SEARCH BAR -->
-                <form class="d-none d-md-flex ms-auto me-4" style="width: 400px; position: relative;">
-                    <input class="form-control border-0 ps-5" type="search" placeholder="Search..."
-                        style="width: 100%;">
-                    <i class="fa fa-search"
-                        style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); color: gray;"></i>
-                </form>
-
-                <!-- NAV RIGHT ICONS -->
-                <div class="navbar-nav align-items-center">
-                    <!-- Mail Icon -->
-                    <div class="nav-item dropdown me-3">
-                        <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                            <i class="fa fa-envelope me-lg-2"></i>
-                        </a>
-                    </div>
-
-                    <!-- Notification Icon -->
-                    <div class="nav-item dropdown me-3">
-                        <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                            <i class="fa fa-bell me-lg-2"></i>
-                        </a>
-                        <!-- Optional dropdown menu for notifications -->
-                    </div>
-
-                    <!-- User Profile -->
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link d-flex align-items-center" data-bs-toggle="dropdown">
-                            <!-- User avatar -->
-                            <img class="rounded-circle me-2" src="https://www.w3schools.com/howto/img_avatar.png"
-                                alt="Default Profile Picture" style="width: 30px; height: 30px;">
-                            <!-- Name & Role stacked -->
-                            <div class="d-none d-lg-flex flex-column">
-                                <span style="font-size: 13px;">Profile</span>
-                            </div>
-                        </a>
 
                     </div>
                 </div>
             </nav>
-            <!-- Navbar End -->
+        </div>
 
-            <!-- Sales Chart Start -->
-            <div class="container-fluid pt-4 px-4">
-                <!-- Centered Paragraph -->
-                <div class="row">
-                    <div class="col-12">
-                        <p class="text-center mb-4 text-danger fw-bold">
-                            Dear customer, all payment should be done with this application.
-                        </p>
-                    </div>
+    </div>
+
+    <!-- Sidebar End -->
+
+
+    <!-- Content Start -->
+    <div class="content">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+            <!-- Sidebar toggler (hamburger icon) for smaller screens -->
+            <a href="#" class="sidebar-toggler flex-shrink-0 me-3">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <!-- BRAND / LOGO (Visible on large screens) -->
+            <a href="index.html" class="navbar-brand d-none d-lg-flex align-items-center me-4">
+
+            </a>
+
+            <!-- BRAND / LOGO (Visible on small screens) -->
+            <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+
+            </a>
+
+            <div class="d-none d-lg-block ms-3">
+                <span style="color: white; font-size: 13px;">Welcome to ReviveRide</span>
+            </div>
+
+            <!-- SEARCH BAR -->
+            <form class="d-none d-md-flex ms-auto me-4" style="width: 400px; position: relative;">
+                <input class="form-control border-0 ps-5" type="search" placeholder="Search..." style="width: 100%;">
+                <i class="fa fa-search"
+                    style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); color: gray;"></i>
+            </form>
+
+            <!-- NAV RIGHT ICONS -->
+            <div class="navbar-nav align-items-center">
+                <!-- Mail Icon -->
+                <div class="nav-item dropdown me-3">
+                    <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                        <i class="fa fa-envelope me-lg-2"></i>
+                    </a>
                 </div>
 
-                <!-- Three Columns -->
-                <div class="row g-4">
-                    <!-- Column 1 -->
-                    <div class="col-sm-12 col-xl-4">
-                        <div class="text-center rounded p-4">
-                            <div class="d-flex flex-column align-items-center justify-content-center mb-4">
-                                <h6 class="mb-0 text-center">Worldwide Sales</h6>
-                            </div>
-                            <canvas id="worldwide-sales" style="width: 100%; max-width: 600px; height: auto;"></canvas>
-                        </div>
-                    </div>
+                <!-- Notification Icon -->
+                <div class="nav-item dropdown me-3">
+                    <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                        <i class="fa fa-bell me-lg-2"></i>
+                    </a>
+                    <!-- Optional dropdown menu for notifications -->
+                </div>
 
-                    <!-- Column 2 -->
-                    <div class="col-sm-12 col-xl-4">
-                        <div class="text-center rounded p-4">
-                            <div class="d-flex flex-column align-items-center justify-content-center mb-4">
-                                <h6 class="mb-0 text-center">Sales & Revenue</h6>
-                            </div>
-                            <img src="img/map_small.jpg" alt="" style="width: 80%; display: block; margin: 0 auto;">
+                <!-- User Profile -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link d-flex align-items-center" data-bs-toggle="dropdown">
+                        <!-- User avatar -->
+                        <img class="rounded-circle me-2" src="https://www.w3schools.com/howto/img_avatar.png"
+                            alt="Default Profile Picture" style="width: 30px; height: 30px;">
+                        <!-- Name & Role stacked -->
+                        <div class="d-none d-lg-flex flex-column">
+                            <span style="font-size: 13px;">Profile</span>
                         </div>
-                    </div>
+                    </a>
 
-                    <!-- Column 3 -->
-                    <div class="col-sm-12 col-xl-4">
-                        <div class="text-center rounded p-4">
-                            <div class="d-flex flex-column align-items-center justify-content-center mb-4">
-                                <h6 class="mb-0 text-center">Upcoming Appointments</h6>
-                            </div>
-                            <canvas id="appointmentsChart"
-                                style="width: 100%; max-width: 600px; height: auto;"></canvas>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <!-- Sales Chart End -->
+        </nav>
+        <!-- Navbar End -->
 
+        <!-- Sales Chart Start -->
+        <div class="container-fluid pt-4 px-4">
+            <!-- Centered Paragraph -->
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center mb-4 text-danger fw-bold">
+                        Dear customer, all payment should be done with this application.
+                    </p>
+                </div>
+            </div>
 
-            <!-- Table Data -->
-            <div class="container mt-5">
-                <div class="row">
-                    <!-- Table Section -->
-                    <div class="col-12 col-md-6 mb-4 d-none d-lg-block">
-                        <h4 class="fw-bold text-center text-md-start">Recent Order</h4>
-                        <div class="table-container" style="width: 560px; height: 600px;">
-                            <table class="table table-striped mt-3 w-100">
-                                <thead>
-                                    <tr>
-                                        <th>No</th>
-                                        <th>User Name</th>
-                                        <th>Order Date</th>
-                                        <th>Status</th>
-                                        <th>Price</th>
-                                        <th>Customers</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>01</td>
-                                        <td>Rabi Uthman</td>
-                                        <td>March 26, 2025<br><small>9:20 AM</small></td>
-                                        <td><span class="badge bg-success">Received</span></td>
-                                        <td>N45,000</td>
-                                        <td>Rafiu Abba</td>
-                                    </tr>
-                                    <tr>
-                                        <td>02</td>
-                                        <td>Halima Baba</td>
-                                        <td>March 26, 2025<br><small>10:16 AM</small></td>
-                                        <td><span class="badge bg-warning text-dark">Shipping</span></td>
-                                        <td>N10,000</td>
-                                        <td>Paul Abbey</td>
-                                    </tr>
-                                    <tr>
-                                        <td>03</td>
-                                        <td>Ade Toyin</td>
-                                        <td>March 26, 2025<br><small>9:55 AM</small></td>
-                                        <td><span class="badge bg-warning text-dark">Shipping</span></td>
-                                        <td>N3,000</td>
-                                        <td>Ini Jamiu</td>
-                                    </tr>
-                                    <tr>
-                                        <td>04</td>
-                                        <td>Olamide Badmus</td>
-                                        <td>March 25, 2025<br><small>7:22 AM</small></td>
-                                        <td><span class="badge bg-success">Received</span></td>
-                                        <td>N13,000</td>
-                                        <td>Rafiu Abba</td>
-                                    </tr>
-                                    <tr>
-                                        <td>05</td>
-                                        <td>John Joe</td>
-                                        <td>March 25, 2025<br><small>7:58 AM</small></td>
-                                        <td><span class="badge bg-success">Received</span></td>
-                                        <td>N80,000</td>
-                                        <td>Kola Peddro</td>
-                                    </tr>
-                                    <tr>
-                                        <td>06</td>
-                                        <td>Nnena Chukudi</td>
-                                        <td>March 24, 2025<br><small>12:08 AM</small></td>
-                                        <td><span class="badge bg-warning text-dark">Shipping</span></td>
-                                        <td>N200,000</td>
-                                        <td>Ali Umar</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+            <!-- Three Columns -->
+            <div class="row g-4">
+                <!-- Column 1 -->
+                <div class="col-sm-12 col-xl-4">
+                    <div class="text-center rounded p-4">
+                        <div class="d-flex flex-column align-items-center justify-content-center mb-4">
+                            <h6 class="mb-0 text-center">Worldwide Sales</h6>
                         </div>
+                        <canvas id="worldwide-sales" style="width: 100%; max-width: 600px; height: auto;"></canvas>
                     </div>
+                </div>
 
-                    <!-- Pie Chart Section -->
-                    <div class="col-12 col-md-6 ms-md-auto text-center mt-4 mt-md-0 mx-auto"
-                        style="max-width: 344.78px; height: 462px;">
-                        <h4 class="fw-bold text-center">Sales Distribution</h4>
-                        <canvas id="salesChart" style="width: 100%; height: 100%;"></canvas>
+                <!-- Column 2 -->
+                <div class="col-sm-12 col-xl-4">
+                    <div class="text-center rounded p-4">
+                        <div class="d-flex flex-column align-items-center justify-content-center mb-4">
+                            <h6 class="mb-0 text-center">Sales & Revenue</h6>
+                        </div>
+                        <img src="img/map_small.jpg" alt="" style="width: 80%; display: block; margin: 0 auto;">
+                    </div>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-sm-12 col-xl-4">
+                    <div class="text-center rounded p-4">
+                        <div class="d-flex flex-column align-items-center justify-content-center mb-4">
+                            <h6 class="mb-0 text-center">Upcoming Appointments</h6>
+                        </div>
+                        <canvas id="appointmentsChart" style="width: 100%; max-width: 600px; height: auto;"></canvas>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Sales Chart End -->
+
+
+        <!-- Table Data -->
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Table Section -->
+                <div class="col-12 col-md-6 mb-4 d-none d-lg-block">
+                    <h4 class="fw-bold text-center text-md-start">Recent Order</h4>
+                    <div class="table-container" style="width: 560px; height: 600px;">
+                        <table class="table table-striped mt-3 w-100">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>User Name</th>
+                                    <th>Order Date</th>
+                                    <th>Status</th>
+                                    <th>Price</th>
+                                    <th>Customers</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td>Rabi Uthman</td>
+                                    <td>March 26, 2025<br><small>9:20 AM</small></td>
+                                    <td><span class="badge bg-success">Received</span></td>
+                                    <td>N45,000</td>
+                                    <td>Rafiu Abba</td>
+                                </tr>
+                                <tr>
+                                    <td>02</td>
+                                    <td>Halima Baba</td>
+                                    <td>March 26, 2025<br><small>10:16 AM</small></td>
+                                    <td><span class="badge bg-warning text-dark">Shipping</span></td>
+                                    <td>N10,000</td>
+                                    <td>Paul Abbey</td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td>Ade Toyin</td>
+                                    <td>March 26, 2025<br><small>9:55 AM</small></td>
+                                    <td><span class="badge bg-warning text-dark">Shipping</span></td>
+                                    <td>N3,000</td>
+                                    <td>Ini Jamiu</td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td>Olamide Badmus</td>
+                                    <td>March 25, 2025<br><small>7:22 AM</small></td>
+                                    <td><span class="badge bg-success">Received</span></td>
+                                    <td>N13,000</td>
+                                    <td>Rafiu Abba</td>
+                                </tr>
+                                <tr>
+                                    <td>05</td>
+                                    <td>John Joe</td>
+                                    <td>March 25, 2025<br><small>7:58 AM</small></td>
+                                    <td><span class="badge bg-success">Received</span></td>
+                                    <td>N80,000</td>
+                                    <td>Kola Peddro</td>
+                                </tr>
+                                <tr>
+                                    <td>06</td>
+                                    <td>Nnena Chukudi</td>
+                                    <td>March 24, 2025<br><small>12:08 AM</small></td>
+                                    <td><span class="badge bg-warning text-dark">Shipping</span></td>
+                                    <td>N200,000</td>
+                                    <td>Ali Umar</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Pie Chart Section -->
+                <div class="col-12 col-md-6 ms-md-auto text-center mt-4 mt-md-0 mx-auto"
+                    style="max-width: 344.78px; height: 462px;">
+                    <h4 class="fw-bold text-center">Sales Distribution</h4>
+                    <canvas id="salesChart" style="width: 100%; height: 100%;"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
-        <!-- Back to Top -->
+    <!-- Back to Top -->
     </div>
 
     <!-- JavaScript Libraries -->
