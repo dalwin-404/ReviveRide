@@ -182,10 +182,11 @@
 
 /*** Custom Card ***/
 .custom-card {
-  width: 100%;
-  max-width: 100%;
+  max-width: 400px;
 }
-
+.custom-auth-card {
+  max-width: 400px;
+}
 /*** Hero Section & Signup Form ***/
 .hero-section {
   height: 100vh;
@@ -309,11 +310,6 @@
     font-weight: bold;
     font-size: 1.5rem;
   }
-
-  .custom-card {
-    width: 100%;
-    max-width: 100%;
-  }
 }
 
 @media (max-width: 576px) {
@@ -359,6 +355,16 @@
   .content.open {
     width: 100%;
     margin-left: 0;
+  }
+}
+
+/* Sign Card */
+@media (min-width: 992px) {
+  .custom-auth-card {
+    max-width: 80%; /* Stretch on large screens */
+  }
+  .custom-card {
+    max-width: 100%;
   }
 }
 

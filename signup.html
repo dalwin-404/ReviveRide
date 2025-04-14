@@ -41,11 +41,12 @@
         <!-- Spinner End -->
 
         <!-- Sign Up Start -->
-        <div class="d-flex flex-column align-items-center">
-            <img src="img/logo_img.png" alt="Logo" class="mb-1" width="70">
+        <div class="container-fluid px-3 d-flex flex-column align-items-center min-vh-100 justify-content-center">
+            <img src="img/logo_img.png" alt="Logo" class="mb-1 d-none d-md-block" width="70">
+
             <h5 class="text-center mb-4">ReviveRide</h5>
 
-            <div class="card bg-white p-4 rounded-6" style="width: 600px;">
+            <div class="card bg-white p-4 rounded-4 w-100 custom-auth-card">
                 <h5 class="text-center my-3">Register Now</h5>
                 <form>
                     <div class="mb-3">
@@ -57,10 +58,11 @@
                     <div class="mb-3 position-relative">
                         <input type="password" class="form-control" placeholder="Confirm Password" required>
                     </div>
-                    <button type="submit" class="btn btn-secondary w-100"> <a class="text-white" href="index.html">Sign
-                            Up</button></a>
+                    <button type="submit" class="btn btn-secondary w-100">
+                        <a class="text-white text-decoration-none" href="index.html">Sign Up</a>
+                    </button>
                 </form>
-                <a href="" class="text-center mt-3 cursor-pointer">Or login with</a>
+                <div class="text-center mt-3">Or login with</div>
                 <div class="d-flex justify-content-between">
                     <button class="btn btn-light w-50 me-2 d-flex align-items-center justify-content-center">
                         <img src="img/google_icon.png" alt="Google Logo" style="width: 20px; height: 20px;"
@@ -73,9 +75,10 @@
                         Apple
                     </button>
                 </div>
-                <p class="text-center mt-3">Already have an account? <a href="landingPage.html">Register</a></p>
+                <p class="text-center mt-3">Already have an account? <a href="landingPage.html">Login</a></p>
             </div>
         </div>
+
 
         <!-- Sign Up End -->
     </div>
