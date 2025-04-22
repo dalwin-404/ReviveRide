@@ -216,14 +216,6 @@
 }
 
 /*** Custom Card ***/
-.custom-card {
-  max-width: 400px;
-}
-
-.custom-auth-card {
-  max-width: 400px;
-}
-
 .hero {
   position: relative;
   width: 100%;
@@ -320,10 +312,6 @@
     font-size: 0.9rem;
   }
 
-  .signup-card {
-    max-width: 300px;
-  }
-
   .logo-img {
     width: 50px;
   }
@@ -356,11 +344,6 @@
 
   .hero-content p {
     font-size: 0.8rem;
-  }
-
-  .signup-card {
-    max-width: 100%;
-    margin-top: 80px;
   }
 
   .logo-img {
@@ -396,16 +379,6 @@
 }
 
 /* Sign Card */
-@media (min-width: 992px) {
-  .custom-auth-card {
-    max-width: 80%;
-    /* Stretch on large screens */
-  }
-
-  .custom-card {
-    max-width: 100%;
-  }
-}
 
 @media (max-width: 991.98px) {
   .sidebar {
