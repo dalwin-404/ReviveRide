@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ReviveRide -Dashboard</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>ReviveRide -Home</title>
+    <meta content="width: device-width, initial-scale=1.0" name="viewport">
 
     <!-- Favicon  -->
     <link rel="icon" href="img/logo_img.png">
@@ -30,7 +30,7 @@
 </head>
 
 <body>
-    <div class="container-xxl position-relative bg-white d-flex p-0">
+    <div class="container-xxl position-relative d-flex p-0">
         <!-- Spinner Start -->
         <div id="spinner"
             class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -40,253 +40,233 @@
         </div>
         <!-- Spinner End -->
 
-        <!-- Sidebar Start -->
-        <div class="sidebar pe-4 pb-3" style="height: 100vh; overflow-y: auto;">
-            <nav class="navbar bg-light navbar-light">
+        <!-- Hero Section Start -->
+        <div class="hero position-relative w-100 overflow-hidden">
+            <!-- Video Background -->
+            <video autoplay muted loop playsinline class="video-bg">
+                <source src="video/car-wash.mp4" type="video/mp4">
+            </video>
+            <!-- Dark Overlay -->
+            <div class="overlay"></div>
 
-                <div class="d-flex align-items-center ms-4 mb-4">
-                    <div class="position-relative">
-                        <a href="landingPage.html"><img class="rounded-circle img-fluid" src="img/logo_img.png" alt=""
-                                style="max-width: 70px; height: auto;"></a>
-                        <h5>ReviveRide Spa</h5>
-                    </div>
-
-                </div>
-                <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link"><i
-                            class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-                    <div class="nav-item">
-                        <a href="ourServices.html" class="nav-link"><i class="fa fa-cogs me-2"></i>Mechanic/Wash Service
-                        </a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="feedback.html" class="nav-link"><i class="fas fa-comment-dots me-2"></i>Feedback</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="chatbox.html" class="nav-link"><i class="fas fa-headset me-2"></i>Customer Chatbox</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="locationFinder.html" class="nav-link"><i class="fa fa-map-marker-alt me-2"></i>Location
-                            Finder</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="service.html" class="nav-link"><i class="fa fa-receipt me-2"></i>Transaction
-                            History</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="notification.html" class="nav-link"><i class="fa fa-bell me-2"></i>Notification</a>
-
-                    </div>
-                    <div class="nav-item">
-                        <a href="payment.html" class="nav-link"><i class="fa fa-credit-card me-2"></i>Payment</a>
-
+            <!-- Content Left-Aligned -->
+            <div class="container hero-content px-3 text-white">
+                <div class="row">
+                    <div class="col-lg-6 d-flex flex-column justify-content-center min-vh-100">
+                        <h1 class="display-4 fw-bold text-primary fs-1 fs-md-2 fs-lg-1">Reliable Car Wash & Repairs for
+                            Every Artisan</h1>
+                        <p class="lead text-light mb-4 fs-5 fs-md-6 fs-lg-5">Fast, affordable, and eco-friendly car
+                            services tailored for
+                            artisans.</p>
+                        <a href="#"
+                            class="btn btn-lg btn-primary px-5 py-3 rounded-pill shadow-sm fw-semibold transition-all"
+                            data-bs-toggle="modal" data-bs-target="#userTypeModal">Book Now</a>
                     </div>
                 </div>
-            </nav>
+            </div>
         </div>
+        <!-- Hero Section End -->
+
 
     </div>
 
-    <!-- Sidebar End -->
+    <!-- About Section -->
+    <section class="py-5 bg-gradient-white-blue" id="about">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4 text-primary">About Us</h2>
+            <p class="lead text-muted">
+                We provide fast, reliable, and affordable car repair and washing services tailored specifically for
+                artisans. Whether you need your car picked up, repaired, or given a sparkling clean, our professionals
+                are
+                just a click away.
+            </p>
+        </div>
+    </section>
 
-
-    <!-- Content Start -->
-    <div class="content">
-        <!-- Navbar Start -->
-        <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
-            <!-- Sidebar toggler (hamburger icon) for smaller screens -->
-            <a href="#" class="sidebar-toggler flex-shrink-0 me-3">
-                <i class="fa fa-bars"></i>
-            </a>
-
-            <!-- BRAND / LOGO (Visible on large screens) -->
-            <a href="index.html" class="navbar-brand d-none d-lg-flex align-items-center me-4">
-
-            </a>
-
-            <!-- BRAND / LOGO (Visible on small screens) -->
-            <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
-
-            </a>
-
-            <div class="d-none d-lg-block ms-3">
-                <span style="color: white; font-size: 13px;">Welcome to ReviveRide</span>
-            </div>
-
-            <!-- SEARCH BAR -->
-            <form class="d-none d-md-flex ms-auto me-4" style="width: 400px; position: relative;">
-                <input class="form-control border-0 ps-5" type="search" placeholder="Search..." style="width: 100%;">
-                <i class="fa fa-search"
-                    style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); color: gray;"></i>
-            </form>
-
-            <!-- NAV RIGHT ICONS -->
-            <div class="navbar-nav align-items-center">
-                <!-- Mail Icon -->
-                <div class="nav-item dropdown me-3">
-                    <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                        <i class="fa fa-envelope me-lg-2"></i>
-                    </a>
-                </div>
-
-                <!-- Notification Icon -->
-                <div class="nav-item dropdown me-3">
-                    <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                        <i class="fa fa-bell me-lg-2"></i>
-                    </a>
-                    <!-- Optional dropdown menu for notifications -->
-                </div>
-
-                <!-- User Profile -->
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link d-flex align-items-center" data-bs-toggle="dropdown">
-                        <!-- User avatar -->
-                        <img class="rounded-circle me-2" src="https://www.w3schools.com/howto/img_avatar.png"
-                            alt="Default Profile Picture" style="width: 30px; height: 30px;">
-                        <!-- Name & Role stacked -->
-                        <div class="d-none d-lg-flex flex-column">
-                            <span style="font-size: 13px;">Profile</span>
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-        </nav>
-        <!-- Navbar End -->
-
-        <!-- Sales Chart Start -->
-        <div class="container-fluid pt-4 px-4">
-            <!-- Centered Paragraph -->
-            <div class="row">
-                <div class="col-12">
-                    <p class="text-center mb-4 text-danger fw-bold">
-                        Dear customer, all payment should be done with this application.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Three Columns -->
+    <!-- Services Section -->
+    <section class="py-5 bg-gradient-white-blue" id="services">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5 text-primary">Our Services</h2>
             <div class="row g-4">
-                <!-- Column 1 -->
-                <div class="col-sm-12 col-xl-4">
-                    <div class="text-center rounded p-4">
-                        <div class="d-flex flex-column align-items-center justify-content-center mb-4">
-                            <h6 class="mb-0 text-center">Worldwide Sales</h6>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="bi bi-tools display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">Car Repairs</h5>
+                            <p class="card-text text-muted">Top-tier mechanic services for all your car repair needs,
+                                handled by experts.</p>
                         </div>
-                        <canvas id="worldwide-sales" style="width: 100%; max-width: 600px; height: auto;"></canvas>
                     </div>
                 </div>
-
-                <!-- Column 2 -->
-                <div class="col-sm-12 col-xl-4">
-                    <div class="text-center rounded p-4">
-                        <div class="d-flex flex-column align-items-center justify-content-center mb-4">
-                            <h6 class="mb-0 text-center">Sales & Revenue</h6>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="bi bi-droplet display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">Car Washing</h5>
+                            <p class="card-text text-muted">Premium car wash that gives your ride a fresh, shiny
+                                look—inside
+                                and out.</p>
                         </div>
-                        <img src="img/map_small.jpg" alt="" style="width: 80%; display: block; margin: 0 auto;">
                     </div>
                 </div>
-
-                <!-- Column 3 -->
-                <div class="col-sm-12 col-xl-4">
-                    <div class="text-center rounded p-4">
-                        <div class="d-flex flex-column align-items-center justify-content-center mb-4">
-                            <h6 class="mb-0 text-center">Upcoming Appointments</h6>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="bi bi-truck display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">Pick-up & Delivery</h5>
+                            <p class="card-text text-muted">Convenient vehicle pick-up and delivery services at your
+                                doorstep.</p>
                         </div>
-                        <canvas id="appointmentsChart" style="width: 100%; max-width: 600px; height: auto;"></canvas>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Sales Chart End -->
+    </section>
 
-
-        <!-- Table Data -->
-        <div class="container mt-5">
-            <div class="row">
-                <!-- Table Section -->
-                <div class="col-12 col-md-6 mb-4 d-none d-lg-block">
-                    <h4 class="fw-bold text-center text-md-start">Recent Order</h4>
-                    <div class="table-container" style="width: 560px; height: 600px;">
-                        <table class="table table-striped mt-3 w-100">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th>User Name</th>
-                                    <th>Order Date</th>
-                                    <th>Status</th>
-                                    <th>Price</th>
-                                    <th>Customers</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>01</td>
-                                    <td>Rabi Uthman</td>
-                                    <td>March 26, 2025<br><small>9:20 AM</small></td>
-                                    <td><span class="badge bg-success">Received</span></td>
-                                    <td>N45,000</td>
-                                    <td>Rafiu Abba</td>
-                                </tr>
-                                <tr>
-                                    <td>02</td>
-                                    <td>Halima Baba</td>
-                                    <td>March 26, 2025<br><small>10:16 AM</small></td>
-                                    <td><span class="badge bg-warning text-dark">Shipping</span></td>
-                                    <td>N10,000</td>
-                                    <td>Paul Abbey</td>
-                                </tr>
-                                <tr>
-                                    <td>03</td>
-                                    <td>Ade Toyin</td>
-                                    <td>March 26, 2025<br><small>9:55 AM</small></td>
-                                    <td><span class="badge bg-warning text-dark">Shipping</span></td>
-                                    <td>N3,000</td>
-                                    <td>Ini Jamiu</td>
-                                </tr>
-                                <tr>
-                                    <td>04</td>
-                                    <td>Olamide Badmus</td>
-                                    <td>March 25, 2025<br><small>7:22 AM</small></td>
-                                    <td><span class="badge bg-success">Received</span></td>
-                                    <td>N13,000</td>
-                                    <td>Rafiu Abba</td>
-                                </tr>
-                                <tr>
-                                    <td>05</td>
-                                    <td>John Joe</td>
-                                    <td>March 25, 2025<br><small>7:58 AM</small></td>
-                                    <td><span class="badge bg-success">Received</span></td>
-                                    <td>N80,000</td>
-                                    <td>Kola Peddro</td>
-                                </tr>
-                                <tr>
-                                    <td>06</td>
-                                    <td>Nnena Chukudi</td>
-                                    <td>March 24, 2025<br><small>12:08 AM</small></td>
-                                    <td><span class="badge bg-warning text-dark">Shipping</span></td>
-                                    <td>N200,000</td>
-                                    <td>Ali Umar</td>
-                                </tr>
-                            </tbody>
-                        </table>
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-gradient-white-blue" id="testimonials">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5 text-primary">What Our Users Say</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow p-4">
+                        <img src="img/testimonial-1.jpg" alt="Testimonial"
+                            class="img-fluid rounded-circle mb-3 d-block mx-auto" style="width: 80px; height: 80px;">
+                        <p class="text-muted">"As an artisan, this service saves me time and stress. Very reliable!"</p>
+                        <h6 class="fw-semibold mt-3 mb-0">— Sofia A., Mechanic</h6>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow p-4">
+                        <img src="img/testimonial-2.jpg" alt="Testimonial"
+                            class="img-fluid rounded-circle mb-3 d-block mx-auto" style="width: 80px; height: 80px;">
+                        <p class="text-muted">"Booking a car wash has never been this easy. Love the service!"</p>
+                        <h6 class="fw-semibold mt-3 mb-0">— Bola K., Auto-painter</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow p-4">
+                        <img src="img/testimonial-3.jpg" alt="Testimonial"
+                            class="img-fluid rounded-circle mb-3 d-block mx-auto" style="width: 80px; height: 80px;">
+                        <p class="text-muted">"Great team, fast pick-up and delivery. Perfect for my work schedule."</p>
+                        <h6 class="fw-semibold mt-3 mb-0">— James O., Electrician</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Pie Chart Section -->
-                <div class="col-12 col-md-6 ms-md-auto text-center mt-4 mt-md-0 mx-auto"
-                    style="max-width: 344.78px; height: 462px;">
-                    <h4 class="fw-bold text-center">Sales Distribution</h4>
-                    <canvas id="salesChart" style="width: 100%; height: 100%;"></canvas>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-gradient-white-blue" id="faq">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5 text-primary">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne">
+                            How do I book a car service?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Simply click on the “Book Now” button, and sign up for our services.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo">
+                            Do you offer same-day delivery?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, depending on your location and service type, same-day delivery is available.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree">
+                            Is this service only for artisans?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            While designed with artisans in mind, anyone can enjoy our car washing and repair services.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="py-5 bg-gradient-white-green" id="contact">
+        <div class="container">
+            <h2 class="text-center fw-bold text-primary mb-5">Get in Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="" method="POST">
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">Name</label>
+                            <input type="text" class="form-control form-control-lg" name="name" required />
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">Email</label>
+                            <input type="email" class="form-control form-control-lg" name="email" required />
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">Message</label>
+                            <textarea class="form-control form-control-lg" name="message" rows="6" required></textarea>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-gradient btn-lg px-4 py-2">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="userTypeModal" tabindex="-1" aria-labelledby="userTypeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="userTypeModalLabel">Select Your Role</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Are you an Artisan or a User?</p>
+                    <div class="d-flex justify-content-around">
+                        <a href="signup.html" class="btn btn-primary">Artisan</a>
+                        <a href="signin.html" class="btn btn-secondary">User</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2025 ReviveRide. All Rights Reserved.</p>
+            <p class="small">
+                <a href="#" class="text-white text-decoration-none me-2">Privacy Policy</a> |
+                <a href="#" class="text-white text-decoration-none ms-2">Terms of Service</a>
+            </p>
+            <div class="mt-2">
+                <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
 
-
-    <!-- Back to Top -->
-    </div>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
